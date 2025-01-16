@@ -13,7 +13,14 @@
     <script>
         function verificar() {
             var pais = window.document.getElementById('txtpais').value
-            alert(pais)
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `Vivendo em ${pais}.`
+
+            if (pais == 'Brasil') {
+                res.innerHTML = 'Você é Brasileiro!'
+            } else {
+                res.innerHTML = 'Você é Estrangeiro!'
+            }
         }
     </script>
 
